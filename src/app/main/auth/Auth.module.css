@@ -1,0 +1,131 @@
+
+  .rightSection { background: #F9F8FB !important; width: 50%; }
+  .leftSection {
+    color: #ffffff;
+    width: 50%;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+  }
+  .logo { position: absolute; top: 50px; left: 50px; height: 60px;}
+  .welcometxt { font-weight: 300; text-transform: uppercase; font-size: 16px;  }
+  .leftText h1 {font-size: 60px !important;  }
+  .leftText .introtxt {font-weight: 400 !important; max-width: 400px;
+    font-size: 18px !important;
+    line-height: 30px !important;}
+  .loginContainer {
+  max-width: 95%;
+  width: 450px;
+  margin: auto;
+  margin-top: 0%;
+  }
+  .loginContainer h2 {font-size: 28px;
+  }
+  .loginContainer p.introtext { font-size: 16px !important; margin: 10px 0 !important; }
+  .btnsubmit {
+    background:#FFC20D !important; color: #000 !important; height: 50px !important; border-radius: 8px !important;
+    text-transform: capitalize !important; font-size: 16px !important; margin-top: 15px !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+  }
+  .loginContainer label { margin-top: 15px; font-size: 16px !important; margin-bottom: 5px; }
+  .forgotTxt { text-align: right; color: #0B2572 !important; font-weight: 600 !important; text-decoration: none !important;
+    font-size: 16px !important; text-decoration: none !important; margin-bottom: 20px }
+  .forgotTxt a { color: #0B2572 !important; text-decoration: none !important; margin-top: 15px !important; float: right; }
+  .dnttxt { font-size: 16px !important;color: #000000; opacity: 0.8; text-align: center; }
+  .dnttxt a { text-decoration: none !important; color: #0B2572 !important; font-weight: 600 !important; padding-left:5px;opacity: 1;}
+  .signup {
+    color: #FED441;
+  }
+   .divider {
+margin-top: 18px;
+margin-bottom: 18px;
+  }
+  .space {
+    padding: 10px;
+  }
+  .otpInput{
+    box-sizing: border-box;
+width: 50px !important;
+height: 50px;
+border: 1px solid #DDE5E9;
+border-radius: 4px;
+  }
+  .gridField{
+    width: 95%;
+  }
+  @media (max-width:766px) {
+   
+    /* .logo{
+     display: none !important;
+    } */
+   
+    .leftSection , .rightSection{
+   width: 100% !important;
+    }
+    .leftText{
+      padding: 140px 20px;
+    }
+   .loginContainer{
+     padding-top: 30px !important;
+   } 
+   
+   }
+   /* @media (max-width:991px) {
+    .flex{
+      display: block !important;
+    }
+    .leftSection , .rightSection{
+      width: 100% !important;
+    }
+   } */
+   .Mui-checked-350  {
+    color: #FFC20D
+  }
+
+  .MuiCheckbox-colorSecondary-354 {
+    color: #FFC20D
+  }
+
+   .wrap{
+    flex-wrap: wrap !important;
+   }
+
+   @media (max-width:575px) {
+    .leftText h1 {
+      font-size: 40px !important;
+      }
+      .leftText .introtxt {
+        font-size: 15px !important;
+      }
+      .welcometxt {
+        font-size: 15px; 
+        letter-spacing: 1.5px !important; 
+      }
+      .smt{
+        margin-top: 0 !important;
+      }
+     
+    .MuiPape.MuiStepper-root-48{
+      
+      padding: 10px !important;
+  }
+
+  .logo {
+       height: 40px !important;
+      }
+   }
+   @media (min-width:576px) and (max-width:991px) {
+    .leftText h1{
+      font-size: 46px !important;
+      }
+      .leftText .introtxt{
+        font-size: 16px !important;
+      }
+      .welcometxt {
+        font-size: 15px !important; 
+        letter-spacing: 1.5px !important; 
+      }
+      .logo {
+        height: 52px !important;
+       }
+   }
+   

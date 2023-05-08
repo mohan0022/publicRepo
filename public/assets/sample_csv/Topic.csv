@@ -1,0 +1,4 @@
+CourseName,Title,Description,ParentTopicName,HasChild,LevelID,LanguageID,TaskType
+"Introduction to Online Learning","Online Learning","Online learning is the newest and most popular form of distance education today.",,No,1,1,1
+"Introduction to Online Learning","Online Writing","Course designed to help prepare you for the type of writing you can expect to encounter throughout your work experience",,No,1,1,1
+"Introduction to Online Learning","Overall Test","Complete the test to finish the course ",,No,1,1,1

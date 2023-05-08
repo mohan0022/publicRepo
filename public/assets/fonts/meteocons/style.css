@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Inter";
+  /* src: url("./fonts/meteocons.ttf?kx31oc") format("truetype"),
+    url("./fonts/meteocons.woff?kx31oc") format("woff"),
+    url("./fonts/meteocons.svg?kx31oc#meteocons") format("svg"); */
+  font-weight: normal;
+  font-style: normal;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap'); 
+*{
+  font-family: 'Inter' !important;
+}
+.meteocons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  /* font-family: "meteocons" !important; */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* <responsive> */
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+.makeStyles-root-1 {
+  max-width: 100% !important;
+}
+@media (max-width: 575px) {
+  .Auth_leftText__2ZfRv h1 {
+    font-size: 35px !important;
+  }
+  .MuiStepper-root-48 {
+    padding: 10px !important;
+  }
+  .makeStyles-label-46 {
+    font-size: 15px;
+  }
+
+  .MuiStepConnector-alternativeLabel {
+    left: calc(-34% + 20px) !important;
+    right: calc(58% + 20px) !important;
+  }
+}
+
+.MuiSvgIcon-root-73 {
+  z-index: 999 !important;
+}
+
+@media (min-width: 576px) and (max-width: 899px) {
+  .MuiStepConnector-alternativeLabel {
+    left: calc(-32% + 20px) !important;
+    right: calc(60% + 20px) !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .MuiStepConnector-alternativeLabel-115 {
+    left: calc(-18% + 20px) !important;
+    right: calc(47% + 20px) !important;
+  }
+
+  .makeStyles-label-46 {
+    font-size: 14px;
+  }
+}
+
+.MuiPaper-root-8 {
+  background-color: inherit !important;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .leftText h1 {
+    font-size: 48px !important;
+  }
+  .leftText .introtxt {
+    font-size: 16px !important;
+  }
+  .welcometxt {
+    font-size: 15px;
+    letter-spacing: 1.5px !important;
+  }
+}
+
+.makeStyles-logo-386 {
+  width: 150px !important;
+}
+@media (max-width: 379px) {
+  .marginr {
+    margin-right: inherit !important;
+  }
+}
+
+/* <search results> */
+
+.MuiInputBase-input-275:before {
+  content: none !important;
+  border-bottom: none !important;
+}
+
+.MuiTypography-body1-196 {
+  font-size: 15px;
+}

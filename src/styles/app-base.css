@@ -1,0 +1,272 @@
+/**
+ * Normalize.css and sTailwind's base styles.
+ */
+
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap'); 
+@import 'tailwindcss/base';
+
+/**
+ * Custom base styles, applied after the tailwind-base classes
+ */
+
+html {
+	font-size: 62.5%;
+	font-family: Inter;
+	background-color: #ffffff;
+}
+
+body {
+	font-size: 13px;
+	line-height: 1.4;
+	overflow-x: hidden;
+	/* text-transform: capitalize; */
+}
+
+html,
+body,
+#root {
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+}
+
+h1,
+.h1 {
+	font-size: 24px;
+}
+
+h2,
+.h2 {
+	font-size: 20px;
+}
+
+h3,
+.h3 {
+	font-size: 16px;
+}
+
+h4,
+.h4 {
+	font-size: 15px;
+}
+
+h5,
+.h5 {
+	font-size: 13px;
+}
+
+h6,
+.h6 {
+	font-size: 12px;
+}
+
+.ps > .ps__rail-y,
+.ps > .ps__rail-x {
+	z-index: 99;
+}
+.react-pdf__Page__canvas {
+	width: 100% !important;
+	height: auto !important;
+}
+
+a[role='button'] {
+	text-decoration: none;
+}
+
+[role='tooltip'] {
+	z-index: 9999;
+}
+
+/* Medium Devices, Desktops Only */
+@media only screen and (min-width: 992px) {
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	::-webkit-scrollbar:hover {
+		width: 8px;
+		height: 8px;
+		background-color: rgba(0, 0, 0, 0.06);
+	}
+
+	::-webkit-scrollbar-thumb {
+		border: 2px solid transparent;
+		border-radius: 20px;
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		border-radius: 20px;
+	}
+}
+
+form label {
+	z-index: 99;
+}
+
+body.no-animate *,
+body.no-animate *::before,
+body.no-animate *::after {
+	transition: none !important;
+	animation: none !important;
+}
+
+button:focus {
+	outline: none;
+}
+/* .css-12j7rf6-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+	background-color: #ffc30d !important;
+} */
+.MuiSlider-root .MuiSlider-thumb{
+	background-color:#ffffff !important ;
+	border-color: #0B2572 !important;
+	border-width: 2px !important;
+}
+.Mui-selected{
+	background-color: #ffc30d !important;
+}
+.MuiAutocomplete-paper-524{
+	margin: 0px !important;
+	border-radius: 5px !important;
+}
+@keyframes autofill {
+	0%,
+	100% {
+		background: transparent;
+	}
+}
+
+input:-webkit-autofill {
+	animation-delay: 1s;
+	animation-name: autofill !important;
+	animation-fill-mode: both;
+	-webkit-box-shadow: 0 0 0 100px transparent inset !important;
+}
+
+:focus {
+	outline-color: transparent;
+}
+
+/*fullcalendar Fix*/
+.fc-scrollgrid-section-liquid {
+	height: 1px !important;
+}
+
+/* custom css */
+.progress-bar:last-child {
+	border: none;
+}
+
+.segments {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.label {
+	position: absolute;
+	top: 45px;
+}
+
+td {
+	border-bottom: 0px solid rgba(224, 224, 224, 1) !important;
+	border: 0px solid rgba(224, 224, 224, 1);
+}
+
+th {
+	border: 0px solid rgba(224, 224, 224, 1);
+	background-color: #DDE5E9;
+}
+
+.Resizer {
+	position: relative;
+	background: #ebe8e5;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+}
+
+/*
+.Resizer:hover,
+.Resizer:active {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}*/
+
+.Resizer.horizontal {
+	height: 11px;
+	margin: -5px 0;
+	border-top: 5px solid rgba(255, 255, 255, 0);
+	border-bottom: 5px solid rgba(255, 255, 255, 0);
+	cursor: row-resize;
+	width: 100%;
+}
+/*
+.Resizer.horizontal:hover,
+.Resizer.Resizer.horizontal:active {
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}*/
+
+.Resizer.vertical {
+	width: 11px;
+	margin: 0 -5px;
+	border-left: 5px solid rgba(255, 255, 255, 0);
+	border-right: 5px solid rgba(255, 255, 255, 0);
+	cursor: col-resize;
+}
+
+/*
+.Resizer.vertical:hover,
+.Resizer.vertical:active {
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+}
+*/
+
+.Resizer.disabled {
+	cursor: not-allowed;
+}
+.Resizer.disabled:hover,
+.Resizer.disabled:active {
+	border-color: transparent;
+}
+
+.Resizer::after,
+.Resizer::before {
+	content: '';
+	border-left: 1px solid #333;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-100%);
+	right: 0;
+	display: inline-block;
+	height: 20px;
+	margin: 0 2px;
+}
+.Resizer::before {
+	left: 0;
+}
+
+.fullScreen {
+	left: 0 !important;
+	right: 0 !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	width: 100% !important;
+	position: absolute !important;
+	background-color: #ffffff !important;
+	z-index: 9999 !important;
+}
+
+.MuiFilledInput {
+	background-color: #fff !important;
+}
+nav ol {
+	flex-wrap: unset !important;
+}
